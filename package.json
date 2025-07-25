@@ -13,9 +13,11 @@
     "@gsap/react": "^2.1.2",
     "@react-three/drei": "^10.6.0",
     "@react-three/fiber": "^9.2.0",
+    "flowbite": "^3.1.2",
     "gsap": "^3.13.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-router-dom": "^7.7.1",
     "three": "^0.178.0"
   },
   "devDependencies": {

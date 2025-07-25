@@ -1,5 +1,7 @@
 import { appleImg, bagImg, searchImg } from "../utils";
 import { navLists } from "../constants";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   return (
@@ -22,6 +24,8 @@ const Navbar = () => {
           <img src={searchImg} alt="search" width={25} height={35} />
           <img src={bagImg} alt="bag" width={25} height={35} />
         </div>
+
+        <Link to="/login" className="size-12  pl-6 hover:underline">Login</Link>
       </nav>
     </header>
   );
