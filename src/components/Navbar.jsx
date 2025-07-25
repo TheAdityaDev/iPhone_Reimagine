@@ -1,6 +1,6 @@
 import { appleImg, bagImg, searchImg } from "../utils";
 import { navLists } from "../constants";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -9,15 +9,10 @@ const Navbar = () => {
       <nav className="flex w-full screen-max-width">
         <img src={appleImg} alt="Apple logo" width={25} height={35} />
 
-        <div className="flex flex-1 justify-center max-sm:hidden">
-          {navLists.map((nav) => (
-            <div
-              key={nav}
-              className="px-5 text-sm cursor-pointer text-gray-200/50 hover:text-white transition-all"
-            >
-              {nav}
-            </div>
-          ))}
+        <div className="flex flex-1 justify-center gap-4 max-sm:hidden">
+          <NavLink to='/about'>About</NavLink>
+          <NavLink to='/product'>Product</NavLink>
+
         </div>
 
         <div className="flex items-baseline gap-7 max-sm:justify-end max-sm:flex-1">
